@@ -39,8 +39,8 @@ For training M3DUSA in the early (late, resp.) fusion setting, run the script ma
 - *results_dir*, string indicating the absolute path where the results (evaluation metrics) are stored
 - *losses_dir*, string indicating the absolute path where the loss values are stored
 
-## Note
-For training and evaluating a model, *run_experiments.sh* or *run_experiments_classifier.sh* can be modified with the directory containing the data and the directory containing the source code (to be added to the PYTHONPATH environment variable).
+Note:
+For training and evaluating the model, *run_experiments.sh* or *run_experiments_classifier.sh* can be modified with your data directory and your source code directory (the latter to be added to the PYTHONPATH environment variable).
 
 ## Reference
 If you use this code, please cite our paper:
