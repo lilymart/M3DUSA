@@ -9,7 +9,7 @@ import time
 from src.models.GAT import GAT
 from src.robustness_analysis.EF_robustness import masking_unimodal_text, masking_unimodal_network, masking_multimodal, \
     masking_multimodal_mixed
-from src.training.trainer_ES import train_node_classifier, eval_node_classifier
+from src.training.trainer import train_node_classifier, eval_node_classifier
 from src.utils import compute_weights, get_device, set_random_seed
 from src.utils_datasets import get_target_type, load_dataset
 
