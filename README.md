@@ -29,13 +29,13 @@ For the MuMiN dataset, you can refer to [MuMiN](https://mumin-dataset.github.io/
 
 
 ## Training and evaluation
-For training M3DUSA in the early (late, resp.) fusion setting, run the script main.py (main_late_fusion.py) specifying the following parameters:
+For training M3DUSA in the early (late, resp.) fusion setting, run the script main.py (main_late_fusion.py, resp.) specifying the following parameters:
 - *dataset_name* (e.g., "mumin" or "politifact")
 - *split*, string specifying the train-validation-test split ratio (default is "60_15_25")
 - *model*, string specifying the data loading process or the model that will feed the classifier.
    When running main.py, the allowed values are: "EF_all", "EF_256", "only_net_edges", "only_net_edges_mps", "only_net_edges_meta", "only_net_edges_mps_meta" (default is "EF_256"). 
    When running main_late_fusion.py, the allowed values are "LF_concat", "LF_avg_pool", "LF_max_pool", "LF_weighted", "LF_attention", "LF_gated", "LF_bilinear", and additionally: "only_text_news", "only_net_edges_cl", "only_net_edges_mps_cl", "only_net_edges_meta_cl", "only_net_edges_mps_meta_cl", "EF_256_cl", "EF_all_cl".
-   See our paper for further details.
+   See our paper for further details
 - *seed_index*, integer indicating the index of the seed to be used (in the current implementation any index can be specified)
 - *seed*, integer indicating the seed to be used for reproducibility (default is 42)
 - *embeddings_dir*, string indicating the absolute path where the embeddings are stored
