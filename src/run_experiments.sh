@@ -31,6 +31,6 @@ do
     do
         seed="${training_seeds[$seed_index]}"  # Get actual seed value
         echo "### Running experiment with dataset: $dataset_name, split: $split, mode: $mode, seed_index: $seed_index, seed: $seed ###"
-        python src/main_ES.py "$dataset_name" "$split" "$mode" "$seed_index" "$seed" "$embeddings_dir" "$models_dir" "$results_dir" "$losses_dir"
+        python src/main.py "$dataset_name" "$split" "$mode" "$seed_index" "$seed" "$embeddings_dir" "$models_dir" "$results_dir" "$losses_dir"
     done
 done
