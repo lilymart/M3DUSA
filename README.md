@@ -23,6 +23,10 @@ pip install library_name -f https://data.pyg.org/whl/torch-2.3.1+cu121.html
 ```
 
 ## Data
+To compile with [Twitter Developer Policy](https://developer.x.com/en/developer-terms/policy), Twitter datasets cannot be shared. 
+For the PolitiFact dataset, you can follow the instructions in [FakeNewsNet](https://github.com/KaiDMML/FakeNewsNet).
+For the MuMiN dataset, you can refer to [MuMiN](https://mumin-dataset.github.io/).
+
 
 ## Training and evaluation
 For training M3DUSA in the early (late, resp.) fusion setting, run the script main.py (main_late_fusion.py) specifying the following parameters:
