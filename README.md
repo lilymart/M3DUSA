@@ -22,6 +22,8 @@ You can install each of this library by running the following:
 pip install library_name -f https://data.pyg.org/whl/torch-2.3.1+cu121.html
 ```
 
+## Data
+
 ## Training and evaluation
 For training M3DUSA in the early (late, resp.) fusion setting, run the script main.py (main_late_fusion.py) specifying the following parameters:
 - *dataset_name* (e.g., "mumin" or "politifact")
@@ -36,6 +38,18 @@ For training M3DUSA in the early (late, resp.) fusion setting, run the script ma
 - *models_dir*, string indicating the absolute path where the best model is stored
 - *results_dir*, string indicating the absolute path where the results (evaluation metrics) are stored
 - *losses_dir*, string indicating the absolute path where the loss values are stored
+
+## Note
+For training and evaluating a model, *run_experiments.sh* or *run_experiments_classifier.sh* can be modified with the directory containing the data and the directory containing the source code (to be added to the PYTHONPATH environment variable).
+
+## Reference
+If you use this code, please cite our paper:
+
+```
+Martirano, L., Comito, C., Guarascio, M., Pisani, F.S. & Zicari, P.,
+M3DUSA: A Modular Multi-Modal Deep fUSion Architecture for fake news detection on social media. 
+SNAM (2025).
+```
 
 
  
