@@ -23,8 +23,7 @@ def set_random_seed(seed):
 
 
 def get_base_dir():
-    #return '/mnt/nas/martirano/mumin'
-    return '/mnt/nas/martirano/politifact'
+    return '/data'
 
 
 def get_device():
